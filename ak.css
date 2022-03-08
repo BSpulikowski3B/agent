@@ -1,0 +1,296 @@
+
+body{
+    background-color: #EBF4FF;
+    margin: 0px;
+    
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+#menu{
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+#menu > img{
+    max-height: 80px;
+    margin-top: 10px;
+    margin-left: 50px;
+    max-width: 400px;
+}
+#menu> ol {
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	font-size:18px;
+	line-height:2em;
+	text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    transform: translate(100%, -97px);
+}
+#menu > ol a {
+    display:block;
+	text-decoration:none;
+	color:#000;
+	padding: 0px;
+}
+#menu > ol > li {
+	float:right;
+	width:150px;
+	background-color:white;
+	padding: 10px;
+}
+#menu > ol > li:first-child {
+    margin: 30px 370px 30px 30px;
+}
+#menu > ol > li:nth-child(2) {
+    margin: 30px 20px 30px 30px;
+}
+#menu > ol > li:nth-child(3) {
+    margin: 30px 20px 30px 30px;
+}
+#menu > ol > li:hover {
+	background-color:black;
+}
+#menu > ol > li:hover > a {
+    color: white;
+}
+#baner1{
+    background-image: url(zdj/baner1.png);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 90px;
+
+}
+#baner1 > h1 {
+    color: rgb(47, 47, 207);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 20%;
+
+
+
+}
+#baner1  > a {
+    font-size: 40px;
+    color: rgb(47, 47, 207);
+    text-align: right;
+    margin-left: 40%;
+
+}
+
+#blok1{
+    width: 50%;
+    height: 600px;
+    background-color: lightcyan;
+}
+#blok2{
+    width: 50%;
+    height: 600px;
+    background-color: lightcyan;
+}
+#blok3{
+    width: 50%;
+    height: 600px;
+    background-color: lightcyan;
+}
+
+#info h2{
+  color: blue;
+}
+#info  #blok1, #blok2, #blok3 {
+    width: 50%;
+    height: 600px;
+    background-color: lightcyan;
+}
+#blok1 > a, #blok2 > a, #blok3 > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#info{
+
+    text-align: center;
+}
+#kontener1{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#kontener2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+#kontener3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three columns of equal width */
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 1700px){
+
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 16px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    
+}
+@media only screen and (max-width: 1400px){
+
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 14px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+
+    }
+    #baner1{
+        max-width: 1400px;
+        min-width: 100px;
+        
+    }
+  
+    
+}
+@media only screen and (max-width: 1000px){
+    
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 13px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+    }
+   
+}
+@media only screen and (max-width: 900px){
+    
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 12px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+    }
+  
+    
+}
+@media only screen and (max-width: 800px){
+    
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 11px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+    }
+
+    
+}
+@media only screen and (max-width: 600px){
+    
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 10px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+
+    }
+
+    
+}
+@media only screen and (max-width: 400px){
+    
+    #blok1 a, #blok2 a, #blok3 a, h2{
+        font-size: 8px;
+    }
+    #baner1 > h1, #baner1 > a{
+        font-size: 40px;
+
+    }
+
+}
